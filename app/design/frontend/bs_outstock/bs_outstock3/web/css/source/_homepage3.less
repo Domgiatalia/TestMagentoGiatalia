@@ -1,0 +1,333 @@
+.header-container.layout3{
+	.header{
+		background-color: @lightcolor;
+		padding: 0 30px;
+	}
+	.navigation.custommenu{
+		text-align: center;
+	}
+	.nav-sections{
+		float: left;
+	}
+}
+.header-container .header .logo {
+height: 90px;
+    line-height: 90px;
+margin-top: 0;
+}
+.top-content-home{
+	.banner-top-home.home2{
+		margin-top: 80px;
+		.col-banner-top{
+			padding: 20px 15px 0 15px;
+		}
+	}
+	.brand-logo {
+		margin-top: 60px;
+		.container{
+			border-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+.slider_homepageslider2{
+	margin: 0 30px;
+}
+.rokan-newproduct.block{
+	margin-bottom: 50px;
+	.effect-image-1{
+		margin-bottom: 30px;
+		overflow: hidden;
+		img{
+			transition: all 0.5s ease;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+		}
+		&:hover{
+			img{
+				transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-moz-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				-o-transform: scale(1.1);
+			}
+		}
+	}
+}
+.product-item, .product-list-item{
+	max-width: 1000px;
+}
+.selection.onsale {
+	margin-top: 50px;
+}
+.banner-middle {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	> div > div {
+		&:first-child{
+			padding-right: 15px;
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-left: 15px;
+			padding-right: 0;
+		}
+	}
+}
+.box-blog{
+	.rokan-product-heading{
+		margin-top: 30px;
+	}
+}
+.brand-logo{
+	margin: 60px 0 0 0;
+	
+	.container{
+		padding-top: 75px;
+		border-top: 1px solid @bordercolor;
+	}
+	
+}
+.page-footer {
+	margin-right: 30px;
+	margin-bottom: 60px;
+	margin-left: 30px;
+	.footer-newselter {
+		background-color: @detailproductbg;
+		padding-bottom: 70px;
+		.container {
+			border: 0;
+			padding-top: 100px;
+		}
+		.block.newsletter .content .control input{
+			background-color: transparent;
+			border-color: #d7d7d7;
+		}
+		.block.newsletter .content .actions button{
+			min-width: 190px;
+			text-align: center;
+			background: linear-gradient(to bottom, @primarycolor 50%,  @detailproductbg 50%) no-repeat scroll right bottom / 100% 210% @primarycolor;
+		}
+	}
+	.footer-static-container{
+		margin-top: 0;
+	}
+}
+
+.brand-logo{
+	margin-top: 80px;
+}
+.section_testimonial {
+	margin-bottom: 75px;
+	margin-top: 40px;
+	.box-full{
+		padding: 100px 0 80px 0;
+		background: url(../images/bgtechnogical.jpg) center center no-repeat;
+	}
+	.owl-carousel {
+		padding-bottom: 60px;
+	}
+	.owl-theme .owl-pagination{
+		bottom: 0;
+	}
+	.owl-theme .owl-controls .owl-page span{
+		border: 0;
+		background-color: @bordercolor;
+	}
+	.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+		background-color: transparent;
+		border: 2px solid @primarycolor;
+		width: 12px;
+		height: 12px;
+		margin: 4px;
+	}
+	.testimo-slider {
+		padding: 0 10%;
+		.pt-testimonial {
+			text-align: center;
+			.image-tes {
+				img {
+					border-radius: 100%;
+					border: 2px solid @lightcolor;
+				}
+			}
+			.info {
+				.name {
+				    font-size: 12px;
+				    font-weight: 600;
+				    color: #201f1f;
+				    margin-top: 25px;
+				    margin-bottom: 10px;
+				    position: relative;
+
+				}
+			    .job {
+				    color: @primarycolor;
+				    font-size: 14px;
+				    text-transform: none;
+			    }
+			}
+			.content-des-tes {
+			    margin-top: 30px;
+			    font-size: 14px;
+			    line-height: 24px;
+			    font-style: normal;
+			}
+		}
+	}
+	.owl-theme {
+		.owl-controls {
+			.owl-buttons {
+				max-width: 450px;
+				top: 30px;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				position: absolute;
+				&>div {
+					width: 55px;
+					height: 55px;
+					background: @lightcolor;
+					border: 1px solid bordercolor;
+					top: 0;
+					&:before {
+						line-height: 55px;
+						color: #ababab;
+					}
+					&.owl-next {
+						&:before {
+							margin-right: 0;
+						}
+					}
+					&.owl-prev {
+						&:before {
+							margin-left: 0;
+						}	
+					}
+					&:hover {
+						border: 1px solid transparent;
+						&:before {
+							color: @lightcolor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 992px){
+	.banner-middle .row .banner-content .text{
+		width: 100%;
+	}
+}
+@media (max-width: 768px){
+	.custommenu.navigation>ul{
+		text-align: left;
+	}
+	.custommenu.navigation li.level0.fullwidth{
+		margin-right: 10px;
+	}
+}
+@media (max-width: 767px){
+	.rokan-newproduct .product-item, .rokan-newproduct .product-list-item{
+		.product-photo, .product-info{
+			max-width: 300px;
+			margin: auto;
+		}
+	}
+	.banner-middle > div > div:last-child,
+	.banner-middle > div > div:first-child{
+		padding: 0;
+	}
+	.new-product-right{
+		text-align: center;
+	}
+	.header-container .header .logo{
+		float: none;
+		display: inline-block;
+	}
+	.header-container .header .logo-header{
+		width: 60%;
+		float: left;
+		text-align: right;
+	}
+	.header-container .header .nav-toggle{
+		position: static;
+		display: inline-block;
+		float: left;
+	}
+}
+@media (max-width: 480px){
+	.header-container .header .logo{
+		width: auto;
+		padding:0;
+		position: absolute;
+	    left: 50%;
+	    transform: translateX(-50%)
+	}
+	.header-container.layout3 .header{
+		padding: 0 15px;
+	}
+	.header-container .header .minicart-wrapper, 
+	.header-container .header .header-top-setting,
+	.header-container .header .block-search{
+		margin-top: 15px;
+	}
+	.nav-toggle:before{
+		margin-top: 45px;
+	}
+	.header-container .header .logo img{
+		max-height: 60px;
+	}
+	.top-content-home .banner-top-home.home2{
+		margin-top: 40px;
+	}
+	.header-container .header .block-search .block-content .dropdown .dropdown-menu{
+		right: -80px;
+	}
+	.box-full, .page-footer,.slider_homepageslider2{
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+@media (min-width: 992px){
+	.custommenu.navigation li.level0.fullwidth .submenu {
+	    left: 5%;
+	    width: 95%;
+	}	
+}
+@media (max-width: 992px) and (min-width: 768px){
+	.navigation li.level0 {
+   	 margin-right: 10px;
+	}
+}
+.group-product .owl-theme .owl-controls .owl-buttons>div {
+    background-color: #fff !important;
+    margin-right: 0 !important;
+    height: 20px !important;
+}
+.group-product .owl-theme .owl-controls .owl-buttons {
+    margin-top: -66px;
+    right: 0;
+}
+.group-product .owl-theme .owl-controls .owl-buttons>div:before{
+	line-height: 20px !important;
+}
+@media (max-width: 767px){
+	.custommenu.navigation li.level0.fullwidth,
+	.custommenu.navigation li.level0{
+		margin-right: 0 !important;
+	}
+	#back-top{
+		bottom: 70px;
+	}
+}
+@media (max-width: 480px){
+	.header-container.layout3 .header .nav-toggle {
+	    top: 35px;
+	    position: absolute;
+	}
+}

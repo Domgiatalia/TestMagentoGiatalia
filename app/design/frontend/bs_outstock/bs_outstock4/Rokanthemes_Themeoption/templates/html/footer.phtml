@@ -1,0 +1,33 @@
+<div id="back-top" class=""><i class="fa fa-angle-double-up"></i></div>
+<div class="footer-container">
+	<div class="footer-newselter">
+		<div class="container">
+			<?php  echo $this->getLayout()->createBlock('Magento\Newsletter\Block\Subscribe')->setTemplate('Magento_Newsletter::subscribe.phtml')->toHtml(); ?>
+		</div>
+	</div>
+	<div class="footer-static-container">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_menu')->toHtml();?>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<?php echo $this->getChildHtml("copyright"); ?>
+				</div>
+				<div class="col-md-6 col-xs-12">
+					<?php echo $this->getChildHtml("social_block"); ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	window.onload = function () {
+		document.body.className += " preloaded";
+	}
+</script>
+
+
+

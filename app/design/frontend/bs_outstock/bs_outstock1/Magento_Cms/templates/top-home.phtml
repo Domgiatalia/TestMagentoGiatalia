@@ -1,0 +1,31 @@
+
+<div class="top-content-home">
+	<div class="banner-top-home">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_top')->toHtml();?>
+		</div>
+	</div>
+	<div class="best-sale">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Rokanthemes\BestsellerProduct\Block\Bestseller')->setTemplate('Rokanthemes_BestsellerProduct::bestseller.phtml')->toHtml();?> 
+		</div>
+	</div>
+	<div class="banner-middle">
+		<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_middle')->toHtml();?>
+	</div>
+	<div class="selection onsale">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Rokanthemes\Onsaleproduct\Block\Onsaleproduct')->setTemplate('Rokanthemes_Onsaleproduct::onsaleproduct.phtml')->toHtml();?>
+		</div>
+	</div>
+	<!-- <div class="brand-logo">
+		<div class="container">
+			<?php // echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('brand-logo')->toHtml();?>
+		</div>
+	</div> -->
+	<div class="box-blog">
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Rokanthemes\Blog\Block\Sidebar\Recent')->setTemplate('Rokanthemes_Blog::sidebar/slider.phtml')->toHtml();?>
+		</div>
+	</div>	
+</div>

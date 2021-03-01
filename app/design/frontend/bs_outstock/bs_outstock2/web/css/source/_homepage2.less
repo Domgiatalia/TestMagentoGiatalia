@@ -1,0 +1,170 @@
+.header-container.layout2{
+	.header{
+		background-color: @lightcolor;
+		padding: 0 30px;
+	}
+	.navigation.custommenu{
+		text-align: center;
+	}
+}
+.top-content-home{
+	.banner-top-home.home2{
+		margin-top: 10px;
+		.col-banner-top{
+			padding: 20px 15px 0 15px;
+		}
+	}
+}
+.slider_homepageslider2{
+	margin: 0 30px;
+}
+.product-item, .product-list-item{
+	max-width: 1000px;
+}
+.best-sale{
+	.col-img{
+	}
+}
+.banner-middle {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	> div > div {
+		&:first-child{
+			padding-right: 15px;
+			padding-left: 0;
+		}
+		&:last-child{
+			padding-left: 15px;
+			padding-right: 0;
+		}
+	}
+}
+.header-container .header .logo {
+height: 90px;
+    line-height: 90px;
+margin-top: 0;
+}
+.box-blog{
+	.rokan-product-heading{
+		margin-top: 30px;
+	}
+}
+.selection.onsale {
+	margin-top: 90px;
+}
+.brand-logo{
+	margin: 60px 0 0 0;
+	
+	.container{
+		padding-top: 75px;
+		border-top: 1px solid @bordercolor;
+	}
+	
+}
+.page-footer {
+	margin-right: 30px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	.footer-newselter {
+		background-color: @detailproductbg;
+		padding-bottom: 70px;
+		.container {
+			border: 0;
+		}
+		.block.newsletter .content .control input{
+			background-color: transparent;
+		}
+		.block.newsletter .content .actions button{
+			background: linear-gradient(to bottom, @primarycolor 50%,  @detailproductbg 50%) no-repeat scroll right bottom / 100% 210% @primarycolor;
+		}
+	}
+	.footer-static-container{
+		margin-top: 0;
+	}
+}
+@media (max-width: 992px){
+	.banner-middle .row .banner-content .text{
+		width: 100%;
+	}
+}
+
+@media (max-width: 991px){
+	.banner-middle > div > div:last-child{
+		padding: 0 15px;
+	}
+	.banner-middle > div > div:first-child{
+		padding: 0 15px;
+	}
+	.custommenu.navigation li.level0 {
+		margin-right: 20px;
+	}
+}
+@media (max-width: 768px){
+	.custommenu.navigation li.level0 {
+		margin-right: 10px;
+	}
+}
+@media (max-width: 768px){
+	.rokan-bestseller{
+		.col-img{
+			margin-bottom: 25px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.custommenu.navigation li.level0.fullwidth,
+	.custommenu.navigation li.level0{
+		margin-right: 0 !important;
+	}
+	.header-container.layout2 .navigation.custommenu{
+		text-align: left;
+	}
+	.custommenu.navigation li.ui-menu-item>.open-children-toggle{
+		right: 7px;
+	}
+	#back-top{
+		bottom: 70px;
+	}
+}
+@media (max-width: 480px){
+	.product-item .product-info .product.name a, 
+	.product-list-item .product-info .product.name a{
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+	}
+	.product-item{
+		margin-bottom: 30px !important;
+	}
+	.product-item .product-info, .product-list-item .product-info{
+		padding-right: 0;
+		overflow: hidden;
+	}
+	.top-content-home .best-sale .product-item,
+  	.top-content-home .best-sale .product-list-item{
+      margin: auto;
+      padding: 0;
+  	}
+  	.top-content-home .best-sale .row,
+  	.top-content-home .onsale .row{
+      margin-right: 0;
+      margin-left: 0;
+  	}
+	.page-footer,.box-full{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.banner-middle > div > div:first-child,
+	.banner-middle > div > div:last-child{
+		padding: 0;
+	}
+	.minicart-wrapper .block-minicart{
+		right: -55px !important;
+	}
+	.header-container .header .block-search .block-content .dropdown .dropdown-menu{
+		right: -90px;
+	}
+}

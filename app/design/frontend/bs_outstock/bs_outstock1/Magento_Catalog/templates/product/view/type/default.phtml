@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php /* @var $block \Magento\Catalog\Block\Product\View\AbstractView */?>
+<?php 
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->create('Magento\Customer\Model\Session'); 
+$_customerGroup = $customerSession->getCustomer()->getGroupId();
+?>
+<?php 
+    $_product = $block->getProduct();
+    $qty = $_product->getExtensionAttributes()->getStockItem()->getQty();
+    $qtyBO1 = $_product->getData('qty_backorder_1');
+    $qtyBO2 = $_product->getData('qty_backorder_2');
+    ?>
+<?php if ($block->displayProductStockStatus()): ?>
+    <?php if ($_product->isAvailable()): ?>
+        <div class="stock available" title="<?php /* @escapeNotVerified */ echo __('Availability') ?>">
+        <?php if($_customerGroup == 2): ?>
+            <?php /* @escapeNotVerified */ echo __('Stock in hand qty:') ?><span><?php /* @escapeNotVerified */ echo __($qty . ' |') ?></span>
+            <?php /* @escapeNotVerified */ echo __('December Backorders:') ?><span><?php /* @escapeNotVerified */ echo __($qtyBO1 . ' |') ?></span>
+            <?php /* @escapeNotVerified */ echo __('January Backorders:') ?><span><?php /* @escapeNotVerified */ echo __($qtyBO2) ?></span>
+
+        </div>
+        <?php else: ?>
+            <?php /* @escapeNotVerified */ echo __('Create An '. '<a href="http://127.0.0.1:8080/en1/customer/account/login/">Account</a>'.' To See Stock Quantity') ?>
+        </div>
+        <?php endif; ?>
+
+    <?php else: ?>
+        <div class="stock unavailable" title="<?php /* @escapeNotVerified */ echo __('Availability') ?>">
+            <?php /* @escapeNotVerified */ echo __('Availability') ?><span><?php /* @escapeNotVerified */ echo __('Out of stock') ?></span>
+        </div>
+    <?php endif; ?>
+<?php endif; ?>
